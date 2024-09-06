@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="h-screen w-full bg-slate-900">
+    <div class="w-full flex justify-center items-center flex-col gap-5 mt-3 text-white">
+        <div class="flex h-auto flex-row justify-center p-5 w-full">
+            <h1 class="text-center text-5xl text-white">Tier List</h1>
+        </div>
+        <div class="w-[50%] flex flex-col gap-2 h-auto">
+            <div class="h-max bg-slate-700 w-full rounded-md overflow-hidden flex gap-2 "  id="tier-list-container">
+                <div class=" bg-red-500 p-3 min-h-10 w-[8%] flex justify-center items-center">
+                    <h1 class="text-5xl">S</h1>
+                </div>  
+                <div class=" flex flex-wrap gap-2 tier-list min-h-10 w-[89%] grow" id="S">
+                </div>
+            </div>
+            <div class="h-max bg-slate-700 w-full rounded-md overflow-hidden flex gap-2" id="tier-list-container">
+                <div class=" bg-yellow-500 p-3 min-h-10 w-[8%] flex justify-center items-center">
+                    <h1 class="text-5xl">A</h1>
+                </div>  
+                <div class="  flex flex-wrap gap-2 tier-list min-h-10 w-[92%]" id="A">
+                    <!-- <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt="">
+                    <img src="assests/dhoni.png" class=""  alt=""> -->
+                </div>
+            </div>
+            <div class="h-max bg-slate-700 w-full rounded-md overflow-hidden flex gap-2 " id="tier-list-container">
+                <div class=" bg-orange-500 p-3 w-[8%] min-h-10 flex justify-center items-center">
+                    <h1 class="text-5xl">B</h1>
+                </div>  
+                <div class="  flex flex-wrap gap-2 tier-list min-h-10 w-[92%]"id="B">
+                </div>
+            </div>
+            <div class="h-max bg-slate-700 w-full rounded-md overflow-hidden flex gap-2 " id="tier-list-container">
+                <div class=" bg-yellow-500 p-3 min-h-10 w-[8%] flex justify-center items-center">
+                    <h1 class="text-5xl">C</h1>
+                </div>  
+                <div class="  flex flex-wrap gap-2 tier-list min-h-10 w-[92%]" id="C">
+                </div>
+            </div>
+            <div class="h-max bg-slate-700 w-full rounded-md overflow-hidden flex gap-2 " id="tier-list-container">
+                <div class=" bg-green-500 p-3  min-h-10 w-[8%] flex justify-center items-center">
+                    <h1 class="text-5xl">D</h1>
+                </div>  
+                <div class="  flex flex-wrap gap-2 tier-list min-h-10 w-[92%]" id="D">
+                </div>
+            </div>
+            <div class="h-max bg-slate-700 w-full rounded-md overflow-hidden flex gap-2 " id="tier-list-container">
+                <div class=" bg-blue-500 p-3  min-h-10 w-[8%] flex justify-center items-center">
+                    <h1 class="text-5xl">E</h1>
+                </div>  
+                <div class=" flex flex-wrap gap-2 tier-list min-h-10 w-[92%]" id="E">
+                </div>
+            </div>
+        </div>
+        <div class="w-[90%] p-5 mt-3 flex flex-wrap gap-2 bg-slate-800 h-auto rounded-md mb-5" id="image-container">
+            <img src="assests/virat.jpg" alt="" id="1"  draggable="true">
+            <img src="assests/rohit.jpg" alt="" id="2" draggable="true">
+            <img src="assests/surya.jpg" alt="" id="3" draggable="true">
+            <img src="assests/dhoni.png" alt=""  id="4" draggable="true">
+            <img src="assests/rahul.png" alt="" id="5" draggable="true">
+            <img src="assests/hardik.jpg" alt="" id="6" draggable="true">
+            <img src="assests/jadeja.jpg" alt="" id="7" draggable="true">
+            <img src="assests/bumrah.jpg" alt="" id="8" draggable="true">
+            <img src="assests/chahal.jpg" alt="" id="9" draggable="true">
+            <img src="assests/ishan.jpg" alt="" id="10" draggable="true">
+            <img src="assests/jaiswal.jpg" alt="" id="11" draggable="true">
+            <img src="assests/joe root.png" alt="" id="12" draggable="true">
+            <img src="assests/kapil.png" alt="" id="13" draggable="true">
+            <img src="assests/kuldeep.jpg" alt="" id="14" draggable="true">
+            <img src="assests/maxwell.jpg" alt="" id="15" draggable="true">
+            <img src="assests/rahul.png" alt="" id="16" draggable="true">
+            <img src="assests/rishabh.jpg" alt="" id="17" draggable="true">
+            <img src="assests/sachin.png" alt="" id="18" draggable="true">
+            <img src="assests/shiraj.jpg" alt="" id="19" draggable="true">
+            <img src="assests/smriti.jpg" alt="" id="20" draggable="true">
+            <img src="assests/warner.jpg" alt="" id="21" draggable="true">
+            <img src="assests/david miller.jpg" alt="" id="22" draggable="true">
+            <img src="assests/sarurav.png" alt="" id="23" draggable="true">
+            <img src="assests/shami.jpg" alt="" id="24" draggable="true">
+            <img src="assests/kuldeep.jpg" alt="" id="25" draggable="true">
+            <img src="assests/benstokes.jpg" alt="" id="26" draggable="true">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
